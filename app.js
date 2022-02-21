@@ -1,3 +1,15 @@
+//enter button setup
+
+var txt = document.getElementById("search-field");
+txt.addEventListener("keypress", function(event) {
+   
+    // event.preventDefault();
+    // console.log("keycode",event.keyCode, event.key)
+    if (event.key == 'Enter'){
+        document.getElementById("search-button").click();
+    }
+       
+});
 //first proses
 const searchSongs = () =>{
     const searchText = document.getElementById("search-field").value;
